@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import AddProduct from '../components/AddProduct.js'
-import Categories from '../components/categories.js'
+import TheCategories from '../components/TheCategories.js'
 import Footer from '../components/layout/Footer.js'
 import Header from '../components/layout/Header.js'
 import SignUp from '../components/layout/SignUp.js'
@@ -34,7 +34,7 @@ export default function Home() {
       {/* <AddProduct /> */}
       {/* <FilterRow /> */}
       {/* <UploadFile /> */}
-      <Categories />
+      <TheCategories />
       {/* <MyModal /> */}
       {/* <div className="mt-32">
         <h2>The value of count is : {count}</h2>

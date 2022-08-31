@@ -4,8 +4,10 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 import HeaderOption from './HeaderOption'
 import { CogIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function UserOptions() {
+  const router = useRouter()
   return (
     <div className="  text-right">
       <Menu as="div" className="relative inline-block text-left">
@@ -117,7 +119,7 @@ export default function UserOptions() {
                         aria-hidden="true"
                       />
                     )}
-                    Se Déconnecter
+                    <Link href="/login">Se Déconnecter</Link>
                   </button>
                 )}
               </Menu.Item>

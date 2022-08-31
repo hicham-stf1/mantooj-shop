@@ -4,9 +4,9 @@ import CategoryCard from './product/CategoryCard'
 import { HomeIcon } from '@heroicons/react/outline'
 import Header from './layout/Header'
 import Link from 'next/link'
-export default function Categories() {
+export default function ThesCategories() {
   return (
-    <div className="">
+    <div className="mt-40">
       <div className="mx-auto max-w-7xl  px-4 sm:px-6 md:-mt-14 lg:px-8">
         {/* CATÉGORIES DE PRODUITS */}
         <section>
@@ -18,13 +18,10 @@ export default function Categories() {
           <BreadcrumbExample />
         </section>
         <div className=" mb-10 flex flex-col items-center justify-center md:flex-row ">
-          <Link href="/accueil">
-            {' '}
-            <div className="flex flex-[0.25]">
-              {' '}
-              <CategoryCard />
-            </div>{' '}
-          </Link>
+          {' '}
+          <div className="flex flex-[0.25]">
+            {/* <Link href="/accueil"> */} <CategoryCard /> {/* </Link> */}
+          </div>{' '}
           <div className="flex flex-[0.25]">
             {' '}
             <CategoryCard />
